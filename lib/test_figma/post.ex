@@ -7,5 +7,4 @@ defmodule TestFigma.Post do
 
     timestamps()
   end
-
 end
