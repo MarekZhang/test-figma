@@ -77,8 +77,4 @@ defmodule TestFigmaWeb do
   defmacro __using__(which) when is_atom(which) do
     apply(__MODULE__, which, [])
   end
-
-  def dummy do
-    IO.puts("hello")
-  end
 end
