@@ -51,6 +51,7 @@ jobs:
           git push -f gigalixir HEAD:refs/heads/main
       - name: Migration
         run: |
+          sleep 60
           mkdir ~/.ssh
           printf "Host *\n StrictHostKeyChecking no" > ~/.ssh/config
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
