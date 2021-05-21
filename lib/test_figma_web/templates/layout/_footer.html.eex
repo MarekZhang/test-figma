@@ -1,0 +1,9 @@
+<div
+  class="inline-flex w-screen items-start justify-start absolute left-0 bottom-0 bg-black"
+>
+  <div class="flex ml-12 items-center justify-start py-4 pl-4 pr-8">
+    <p class="text-sm font-medium leading-loose text-gray-500">
+      © Copyright 2021 Hewlett Packard Enterprise Development LP
+    </p>
+  </div>
+</div>

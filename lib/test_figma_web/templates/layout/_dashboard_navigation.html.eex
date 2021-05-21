@@ -1,0 +1,122 @@
+<div
+  class="inline-flex flex-col space-y-5 items-start justify-start w-64 pt-4 pb-4 bg-gray-900 h-full"
+>
+  <div class="flex flex-col items-start justify-start w-full ">
+    <div class="inline-flex items-center justify-start w-full h-8 ">
+      <img
+        class="h-full px-3"
+        src="<%= Routes.static_path(@conn, "/images/fan_club_circle.svg") %>"
+      />
+      <img
+        class="h-3.5"
+        src="<%= Routes.static_path(@conn, "/images/fan_club_label.svg") %>"
+      />
+    </div>
+  </div>
+  <div
+    class="flex flex-col space-y-1 items-start justify-start w-full flex-1 px-2"
+  >
+    <div
+      class="inline-flex items-center justify-start w-full py-2 pl-2 pr-3 hover:bg-black rounded-md"
+    >
+      <%= link to: "#", method: :get, class: "" do %>
+        <div class="flex space-x-3 items-center justify-start">
+          <img
+            class="w-6 h-full rounded-lg"
+            src="<%= Routes.static_path(@conn, "/images/home.svg") %>"
+          />
+          <p
+            class="text-sm font-semibold leading-tight text-gray-400 hover:text-white w-32"
+          >
+            Dashboard
+          </p>
+        </div>
+      <% end %>
+    </div>
+    <div
+      class="inline-flex items-center justify-start w-full py-2 pl-2 pr-3 hover:bg-black rounded-md"
+    >
+      <%= link to: "#", method: :get, class: "" do %>
+        <div class="flex space-x-3 items-center justify-start">
+          <img
+            class="w-6 h-full rounded-lg"
+            src="<%= Routes.static_path(@conn, "/images/team.svg") %>"
+          />
+          <p
+            class="text-sm font-semibold leading-tight text-gray-400 hover:text-white w-32"
+          >
+            Team
+          </p>
+        </div>
+      <% end %>
+    </div>
+    <div
+      class="inline-flex items-center justify-start w-full py-2 pl-2 pr-3 hover:bg-black rounded-md"
+    >
+      <%= link to: "#", method: :get, class: "" do %>
+        <div class="flex space-x-3 items-center justify-start">
+          <img
+            class="w-6 h-full rounded-lg"
+            src="<%= Routes.static_path(@conn, "/images/projects.svg") %>"
+          />
+          <p
+            class="text-sm font-semibold leading-tight text-gray-400 hover:text-white w-32"
+          >
+            Projects
+          </p>
+        </div>
+      <% end %>
+    </div>
+    <div
+      class="inline-flex items-center justify-start w-full py-2 pl-2 pr-3 hover:bg-black rounded-md"
+    >
+      <%= link to: "#", method: :get, class: "" do %>
+        <div class="flex space-x-3 items-center justify-start">
+          <img
+            class="w-6 h-full rounded-lg"
+            src="<%= Routes.static_path(@conn, "/images/calendar.svg") %>"
+          />
+          <p
+            class="text-sm font-semibold leading-tight text-gray-400 hover:text-white w-32"
+          >
+            Calendar
+          </p>
+        </div>
+      <% end %>
+    </div>
+    <div
+      class="inline-flex items-center justify-start w-full py-2 pl-2 pr-3 hover:bg-black rounded-md"
+    >
+      <%= link to: "#", method: :get, class: "" do %>
+        <div class="flex space-x-3 items-center justify-start">
+          <img
+            class="w-6 h-full rounded-lg"
+            src="<%= Routes.static_path(@conn, "/images/settings.svg") %>"
+          />
+          <p
+            class="text-sm font-semibold leading-tight text-gray-400 hover:text-white w-32"
+          >
+            Settings
+          </p>
+        </div>
+      <% end %>
+    </div>
+    <div
+      class="inline-flex items-center justify-start w-full py-2 pl-2 pr-3 hover:bg-black rounded-md"
+    >
+      <%= link to: "#", method: :get, class: "" do %>
+        <div class="flex space-x-3 items-center justify-start">
+          <img
+            class="w-6 h-full rounded-lg"
+            src="<%= Routes.static_path(@conn, "/images/logout.svg") %>"
+          />
+          <p
+            class="text-sm font-semibold leading-tight text-gray-400 hover:text-white w-32"
+          >
+            Log out
+          </p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

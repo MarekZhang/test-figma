@@ -1,0 +1,36 @@
+<div class="bg-white">
+  <div
+    class="inline-flex items-start justify-start bg-gray-100 w-screen h-screen"
+  >
+  <%= render TestFigmaWeb.LayoutView, "_dashboard_navigation.html", conn: @conn %>
+    <div class="inline-flex flex-col items-start justify-start w-full">
+      <div
+        class="inline-flex space-x-6 items-center justify-start px-4 bg-white shadow w-full"
+      >
+        <div
+          class="flex space-x-3 items-center justify-start py-2 pl-0.5 pr-3 h-16"
+        >
+          <img
+            class="w-5 h-5"
+            src="<%= Routes.static_path(@conn, "/images/search.svg") %>"
+          />
+          <p class="text-sm leading-tight text-gray-600">Search</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-start justify-start py-6 w-full">
+        <div class="inline-flex items-center justify-start px-8">
+          <p class="text-2xl font-semibold leading-loose text-black">
+            Overview
+          </p>
+        </div>
+        <div
+            class="inline-flex flex-col h-4/6 w-11/12 ml-8 items-start justify-start bg-white shadow border rounded-lg border-gray-200"
+        >
+        <p class="h-80">
+          </p></div
+      </div>
+    </div>
+  </div>
+  <%= render TestFigmaWeb.LayoutView, "_footer.html", conn: @conn %>
+
+</div>
