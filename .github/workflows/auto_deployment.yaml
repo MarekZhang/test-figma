@@ -7,6 +7,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -26,12 +40,12 @@ jobs:
       - name: Check *.ex, *.exs Files Format
         run: mix format --check-formatted
 
-      - name: Check *.eex Templates Format
-        run: |
-          cd assets
-          npm i
-          cd ..
-          assets/node_modules/prettier/bin-prettier.js --check .
+      # - name: Check *.eex Templates Format
+      #   run: |
+      #     cd assets
+      #     npm i
+      #     cd ..
+      #     assets/node_modules/prettier/bin-prettier.js --check .
       - name: Run Test
         run: mix test
 
